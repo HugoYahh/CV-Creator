@@ -1,23 +1,39 @@
-.education-form-container{
+.experience-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    
 }
 
-.education-form{
+.experience-form-container {
+    position: relative;
+}
+
+.experience-form-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 60%;
+    height: 1px;
+    background: lightgray;
+   
+}
+
+.experience-form {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.education-form button{
+.experience-form button {
     width: 75%;
 }
 
-.education-list{
+.experience-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +45,7 @@
     padding: 2rem;
 }
 
-.education-item{
+.experience-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
