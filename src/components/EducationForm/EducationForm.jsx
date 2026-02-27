@@ -48,20 +48,23 @@ export default function EducationForm() {
 
   return (
     <div className='education-form-container'>
-      <h1>Education</h1>
+      <h2>Education</h2>
 
       <div className="education-form">
         <AddButton onClick={handleNewEduc} />
       </div>
 
       <div className="education-list">
+        {educations.length===0 && <h2>No Education Yet !</h2>}
         {educations.map((edu, index) => (
           <div key={index} className="education-item">
             <h3>{edu.schoolName}</h3>
             <p>{edu.startDate} - {edu.endDate}</p>
             <p>{edu.details}</p>
-            <button onClick={() => handleEdit(index)}>Edit</button>
-            <button onClick={() => handleDelete(index)}>Delete</button>
+            <div className="actions">
+              <button onClick={() => handleEdit(index)}>Edit</button>
+              <button onClick={() => handleDelete(index)}>Delete</button>
+            </div>
           </div>
         ))}
       </div>

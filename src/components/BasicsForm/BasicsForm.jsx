@@ -17,10 +17,11 @@ export default function BasicsForm(){
             <div className="fullname-input">
                 <FormInput label="First Name" value={firstName} type="text" id="first-name" required className="input" onChange={e => setFirstName(e.target.value)}></FormInput>
                 <FormInput label="Last Name" value={lastName} type="text" id="last-name" required className="input" onChange={e=>setLastName(e.target.value)}></FormInput>
+            
+                <FormInput label="Email" value={email} type="email" id="email" required className="input" onChange={e=>setEmail(e.target.value)}></FormInput>
+                <FormInput label="Phone" value={phone} type="tel" id="phone" required className="input" onChange={e=>setPhone(e.target.value)}></FormInput>
+                <FormInput label="Address" value={address} type="text" id="address" required className="input" onChange={e=>setAddress(e.target.value)}></FormInput>
             </div>
-            <FormInput label="Email" value={email} type="email" id="email" required className="input" onChange={e=>setEmail(e.target.value)}></FormInput>
-            <FormInput label="Phone" value={phone} type="tel" id="phone" required className="input" onChange={e=>setPhone(e.target.value)}></FormInput>
-            <FormInput label="Address" value={address} type="text" id="address" required className="input" onChange={e=>setAddress(e.target.value)}></FormInput>
         </div>
 
         

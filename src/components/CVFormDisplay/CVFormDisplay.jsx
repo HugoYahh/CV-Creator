@@ -4,9 +4,11 @@ import './CVFormDisplay.css';
 
 export default function CVFormDisplay(){
     return(
-        <>
+        
+        <div className="cv-form-display-container">
             <BasicsForm></BasicsForm>
             <EducationForm></EducationForm>
-        </>
+        </div>
+        
     )
 }

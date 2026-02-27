@@ -4,10 +4,12 @@ import CVFormDisplay from './components/CVFormDisplay/CVFormDisplay'
 function App() {
 
   return (
-    <>
-      <CVFormDisplay></CVFormDisplay>      
+    
+    <div className="app-container">
+      <CVFormDisplay></CVFormDisplay>
       <CVDisplay></CVDisplay>
-    </>
+    </div>
+    
   )
 }
 

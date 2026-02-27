@@ -1,4 +1,19 @@
 .fullname-input{
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.fullname-input input{
+    border-radius: 6px;
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+.basics-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow:auto;
+    flex-wrap: wrap;
 }
