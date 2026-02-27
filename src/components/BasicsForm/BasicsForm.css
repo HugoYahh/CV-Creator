@@ -1,18 +1,31 @@
 .fullname-input{
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .fullname-input input{
     border-radius: 6px;
     border: 1px solid gray;
     padding: 0.5rem;
+    background-color: #f3f4f6;
 }
+
+
 
 .basics-form{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem 0rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+
 }
