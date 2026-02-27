@@ -61,13 +61,15 @@ export default function ExperienceForm(){
                 ))}
             </div>
 
-            <ExperiencePopup>
+            <ExperiencePopup
                 show={showPopup}
                 initialValues={editingExperience ?? emptyForm}
                 onSave={handleSave}
                 onClose={()=> setShowPopup(false)}
+            />
+                
 
-            </ExperiencePopup>
+            
 
         </div>
     )
